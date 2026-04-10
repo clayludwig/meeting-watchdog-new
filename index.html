@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meeting Watchdog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@700&family=Manrope:wght@400;800&family=DM+Sans:ital,wght@1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top navigation bar -->
+  <nav class="topbar">
+    <span class="topbar__name">Meeting Watchdog Logo goes here</span>
+    <div class="topbar__logo-placeholder" aria-label="Logo">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="5" height="5" rx="1" fill="#666"/>
+        <rect x="9" y="2" width="5" height="5" rx="1" fill="#666"/>
+        <rect x="2" y="9" width="5" height="5" rx="1" fill="#666"/>
+        <rect x="9" y="9" width="5" height="5" rx="1" fill="#666"/>
+      </svg>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <main class="main">
+    <div class="container">
+
+      <!-- Hero title -->
+      <h1 class="title">Sift through local government meetings.</h1>
+
+      <!-- Subtitle -->
+      <p class="subtitle">
+        Generate and search through transcripts of recorded and live local government meetings.
+        To begin, paste a YouTube or Granicus link to a live or archived local government meeting
+        and select which site you used in the dropdown.
+      </p>
+
+      <!-- Browse link -->
+      <p class="browse">
+        Don't have a link? Click to 
+        <span class="browse_all"><b>browse all</b></span> 
+        archived Prince George's County government meetings.
+      </p>
+
+      <!-- Byline -->
+      <p class="byline">By Clay Ludwig, Apurva Mahajan, Lizzy Alspach, Ela Jalil and Olivia Borgula</p>
+
+      <!-- Search bar -->
+      <div class="searchbar">
+        <div class="searchbar__dropdown-wrap">
+          <select class="searchbar__select" aria-label="Select platform">
+            <option>YouTube</option>
+            <option>Granicus</option>
+          </select>
+          <svg class="searchbar__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M2 4L6 8L10 4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <div class="searchbar__divider"></div>
+
+        <input
+          class="searchbar__input"
+          type="url"
+          placeholder="Paste YouTube or Granicus link here..."
+          aria-label="Paste meeting link"
+        />
+
+        <button class="searchbar__btn" type="button" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="7.5" cy="7.5" r="5.5" stroke="#fff" stroke-width="1.8"/>
+            <path d="M11.5 11.5L16 16" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
